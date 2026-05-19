@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimberly Schäfer - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+</head>
+<body class="dark">
+    <!-- Animated Stars Background -->
+    <div class="stars-container" id="starsContainer"></div>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Theme umschalten">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-title">
+                <h1 class="hero-name">KIMBERLY</h1>
+                <h1 class="hero-name">SCHÄFER</h1>
+            </div>
+            <p class="hero-subtitle">Mediengestalterin Digital & Print</p>
+            
+            <!-- CV Download Button -->
+            <a href="Lebenslauf.pdf" download="Lebenslauf.pdf" class="cv-download-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Lebenslauf herunterladen</span>
+            </a>
+
+            <div class="hero-tags">
+                <div class="hero-tag">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span>Digital Design</span>
+                </div>
+                <div class="hero-tag">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                    </svg>
+                    <span>Visual Art</span>
+                </div>
+                <div class="hero-tag">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    <span>Print</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-indicator-inner">
+                <div class="scroll-indicator-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="projects-grid">
+                <!-- Project 1: Purple Aesthetics -->
+                <div class="project-card" data-project-id="1">
+                    <img src="Images/Collage6/Collage6.png" alt="Purple Aesthetics" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Purple Aesthetics</h3>
+                            <p>Visual Design</p>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+
+                <!-- Project 2: Film Noir Collection -->
+                <div class="project-card" data-project-id="2">
+                    <img src="Images/Collage1/Collage1.png" alt="Film Noir Collection" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Film Noir Collection</h3>
+                            <p>Photography</p>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+
+                <!-- Project 3: DIVINE Magazine -->
+                <div class="project-card" data-project-id="3">
+                    <img src="Images/Divine/Divine.png" alt="DIVINE Magazine" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>DIVINE Magazine</h3>
+                            <p>Editorial Design</p>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+
+                <!-- Project 4: HER -->
+                <div class="project-card" data-project-id="4">
+                    <img src="Images/Her/HER.png" alt="HER" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>HER</h3>
+                            <p>Film Poster</p>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+
+                <!-- Project 5: The Last Transmission -->
+                <div class="project-card" data-project-id="5">
+                    <img src="Images/TheLastTransmission/The_Last_Transmission.png" alt="The Last Transmission" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>The Last Transmission</h3>
+                            <p>Sci-Fi Poster</p>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+
+                <!-- Project 6: Nightshift -->
+                <div class="project-card" data-project-id="6">
+                    <img src="Images/Nightshift/Nightshift.png" alt="Nightshift" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Nightshift</h3>
+                            <p>Digital Art</p>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+
+                <!-- Project 7: Girl -->
+                <div class="project-card" data-project-id="7">
+                    <img src="Images/GirlwithNewspaper/girl.png" alt="Girl" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Girl</h3>
+                            <p>Digital Art</p>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+
+                <!-- Project 8: Matrix Couple -->
+                <div class="project-card" data-project-id="8">
+                    <img src="Images/MatrixCouple/MatrixCouple.png" alt="Matrix Couple" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Matrix Couple</h3>
+                            <p>Digital Art</p>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+
+                <!-- Project 9: Lost in Silence -->
+                <div class="project-card" data-project-id="9">
+                    <img src="Images/LostinSilence/LostnSilence.png" alt="Lost in Silence" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Lost in Silence</h3>
+                            <p>Digital Art</p>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+
+                <!-- Project 10: Old TV -->
+                <div class="project-card" data-project-id="10">
+                    <img src="Images/OldTV/oldtv.png" alt="Old TV" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Old TV</h3>
+                            <p>Digital Art</p>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+
+                <!-- Project 11: Pew Pew -->
+                <div class="project-card" data-project-id="11">
+                    <img src="Images/PewPew/PewPew.png" alt="Pew Pew" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Pew Pew</h3>
+                            <p>Digital Art</p>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+
+                <!-- Project 12: Night -->
+                <div class="project-card" data-project-id="12">
+                    <img src="Images/Night/Night.png" alt="Night" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Night</h3>
+                            <p>Digital Art</p>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Schließen">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be dynamically inserted -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Expertise</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                    </svg>
+                    <p>Adobe Photoshop</p>
+                </div>
+                <div class="skill-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                    </svg>
+                    <p>Adobe Illustrator</p>
+                </div>
+                <div class="skill-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    <p>Adobe InDesign</p>
+                </div>
+                <div class="skill-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <p>After Effects</p>
+                </div>
+                <div class="skill-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <p>HTML/CSS</p>
+                </div>
+                <div class="skill-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    <p>Figma</p>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <h3>Über mich</h3>
+                <p>25 Jahre alt und aktuell in der Umschulung zur Mediengestalterin Digital und Print mit Fachrichtung Digital. Ich bringe hohe Belastbarkeit und ausgeprägte Kommunikationsstärke mit – Kompetenzen, die sich in der projektorientierten Arbeit als Mediengestalterin bewähren. Ich arbeite selbstständig, verfüge über gute organisatorische Fähigkeiten und eine schnelle Auffassungsgabe.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Kontakt</h2>
+            
+            <div class="contact-grid">
+                <a href="mailto:kimberlyt6t03schaefer@gmail.com" class="contact-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <h3>Email</h3>
+                    <p>kimberly0603schaefer@gmail.com</p>
+                </a>
+
+                <a href="tel:015228279204" class="contact-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <h3>Telefon</h3>
+                    <p>01522 8279204</p>
+                </a>
+
+                <div class="contact-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <h3>Standort</h3>
+                    <p>In den Stainäckern 38A<br>64832 Babenhausen</p>
+                </div>
+            </div>
+
+            <!-- Instagram QR Code -->
+            <div class="instagram-card">
+                <h3>Folge mir auf Instagram</h3>
+                <div class="qr-code-container">
+                    <img src="./Images/designs.de.kimbo_qr (3).png" alt="Instagram QR Code" class="qr-code">
+                </div>
+                <a href="https://www.instagram.com/designs.de.kimbo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="instagram-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    <span>@designs.de.kimbo</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2026 Kimberly Schäfer. Portfolio</p>
+                <a href="https://www.instagram.com/designs.de.kimbo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="footer-instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    <span>@designs.de.kimbo</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
